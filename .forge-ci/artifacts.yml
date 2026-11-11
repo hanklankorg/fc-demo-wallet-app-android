@@ -3,8 +3,16 @@
 # SPDX-License-Identifier: CC0-1.0
 
 # Artifacts Configuration for wallet-app-android
-# Android application - APK/AAB files attached to GitHub Release
+# Android application - the AAB is attached to the GitHub Release
 # and published to Google Play internal track
+
+# The release files, the release commit and the final tag are signed with
+# the GPG key in RELEASE_GPG_PRIVATE_KEY, as before.
+sign:
+  method: gpg
+
+git-signing:
+  method: gpg
 
 artifacts:
   - name: wallet-android-demo
@@ -16,10 +24,10 @@ artifacts:
     config:
       java-version: 21
       build-module: app
-      # Declarative variant selection: the orchestrator (v2.8.3+) derives
-      # gradle tasks from product-flavor + build-types + include-aab. The
-      # build's AAB upload name uses artifacts.yml `name:` so it lines up
-      # with what release-publish-stage forwards to publish-google-play.
+      # Declarative variant selection: the orchestrator derives gradle tasks
+      # from product-flavor + build-types + include-aab. The build's AAB
+      # upload name uses the `name:` above, so it lines up with what the
+      # release publish stage forwards to publish-google-play.
       product-flavor: demo
       build-types: release
       gradle-version-file: gradle.properties

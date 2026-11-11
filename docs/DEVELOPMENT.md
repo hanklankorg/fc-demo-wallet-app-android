@@ -552,5 +552,5 @@ Releases → Download AAB → Play Console → Upload
 
 - [Android Gradle Plugin Documentation](https://developer.android.com/build)
 - [Google Play Console](https://play.google.com/console)
-- [Reusable CI Documentation](https://github.com/diggsweden/reusable-ci)
+- [Forge CI Documentation](https://github.com/diggsweden/forge-ci)
 - [Semantic Versioning](https://semver.org/)
