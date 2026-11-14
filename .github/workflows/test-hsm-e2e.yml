@@ -10,7 +10,7 @@ on: # yamllint disable-line rule:truthy
     paths:
       - "app/src/androidTest/java/se/digg/wallet/hsm/**"
       - "scripts/hsm-e2e/**"
-      - ".github/workflows/hsm-e2e.yml"
+      - ".github/workflows/test-hsm-e2e.yml"
 
 permissions:
   contents: read
