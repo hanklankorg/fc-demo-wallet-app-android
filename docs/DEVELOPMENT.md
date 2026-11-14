@@ -311,8 +311,8 @@ This project uses two main workflows for building and releasing Android applicat
 2. Create and push version tag:
 
    ```bash
-   git tag -s v1.0.0 -m "Release v1.0.0"
-   git push origin v1.0.0
+   git tag -s release-request/v1.0.0 -m "Release v1.0.0"
+   git push origin release-request/v1.0.0
    ```
 
 3. Wait 15-25 minutes
@@ -372,8 +372,8 @@ This project uses two main workflows for building and releasing Android applicat
 1. **Create production release:**
 
    ```bash
-   git tag -s v1.0.0 -m "Release v1.0.0"
-   git push origin v1.0.0
+   git tag -s release-request/v1.0.0 -m "Release v1.0.0"
+   git push origin release-request/v1.0.0
    ```
 
 2. **Wait for release-workflow to complete** (~15-25 minutes)
@@ -524,8 +524,8 @@ GitHub Actions → Release Dev Workflow → Run workflow
 ### Create production release
 
 ```bash
-git tag -s v1.0.0 -m "Release v1.0.0"
-git push origin v1.0.0
+git tag -s release-request/v1.0.0 -m "Release v1.0.0"
+git push origin release-request/v1.0.0
 ```
 
 ### Download dev builds
