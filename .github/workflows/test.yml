@@ -47,7 +47,6 @@ jobs:
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
 
-
       - name: Log working dir
         run: ls -al
 
