@@ -47,8 +47,6 @@ jobs:
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
 
-      - name: Decode secrets.properties
-        run: printf '%s' "${{ secrets.SECRETS_PROPERTIES_BASE64 }}" | base64 --decode > secrets.properties
 
       - name: Log working dir
         run: ls -al
