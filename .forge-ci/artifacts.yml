@@ -19,6 +19,9 @@ artifacts:
     project-type: gradle-android
     working-directory: .
     build-type: application
+    # The build SBOM only: there is no analysed SBOM for an APK or AAB, and
+    # the default of all three layers would ask for one.
+    sboms: build
     publish-to:
       - google-play
     config:
