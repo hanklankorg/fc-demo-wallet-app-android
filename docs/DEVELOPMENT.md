@@ -226,7 +226,7 @@ This project uses two main workflows for building and releasing Android applicat
 
 ## Workflows in Detail
 
-### 1. release-dev-workflow.yml
+### 1. release-snapshot-workflow.yml
 
 **Purpose:** Create test builds for internal QA and development testing.
 
@@ -330,7 +330,7 @@ This project uses two main workflows for building and releasing Android applicat
 
 ## Artifact Distribution
 
-### release-dev-workflow Artifacts
+### release-snapshot-workflow Artifacts
 
 **Storage:** GitHub Actions Artifacts tab
 
@@ -397,7 +397,7 @@ This project uses two main workflows for building and releasing Android applicat
 
 ## Configuration Files
 
-### `.github/workflows/release-dev-workflow.yml`
+### `.github/workflows/release-snapshot-workflow.yml`
 
 Configures development builds:
 
@@ -447,7 +447,7 @@ artifacts:
 
 ## Security Features
 
-### Development Builds (release-dev-workflow)
+### Development Builds (release-snapshot-workflow)
 
 - ✗ No Android app signing
 - ✗ No GPG signing
@@ -491,7 +491,7 @@ Configure these in GitHub Settings → Secrets:
 
 ### Development workflow
 
-- Use release-dev-workflow frequently for testing
+- Use release-snapshot-workflow frequently for testing
 - Always test debug builds before creating release
 - Keep artifact retention at 7 days to save storage
 
