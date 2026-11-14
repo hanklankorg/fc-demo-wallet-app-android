@@ -22,8 +22,7 @@ artifacts:
     # The build SBOM only: there is no analysed SBOM for an APK or AAB, and
     # the default of all three layers would ask for one.
     sboms: build
-    publish-to:
-      - google-play
+    publish-to: []
     config:
       java-version: 21
       build-module: app
@@ -35,8 +34,6 @@ artifacts:
       build-types: release
       gradle-version-file: gradle.properties
       # Signing configuration (requires secrets)
-      enable-android-signing: true
+      enable-android-signing: false
       # Google Play configuration
       package-name: se.digg.wallet.demo
-      google-play-track: internal
-      google-play-status: completed
