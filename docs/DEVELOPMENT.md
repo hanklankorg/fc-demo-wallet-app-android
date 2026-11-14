@@ -258,7 +258,7 @@ This project uses two main workflows for building and releasing Android applicat
 **How to use:**
 
 1. Go to GitHub Actions tab
-2. Select "Release Dev Workflow"
+2. Select "Release Snapshot Workflow"
 3. Click "Run workflow" button
 4. Wait 5-10 minutes
 5. Download artifacts from the workflow run
@@ -518,7 +518,7 @@ Configure these in GitHub Settings → Secrets:
 
 ```bash
 # Manual trigger via GitHub UI
-GitHub Actions → Release Dev Workflow → Run workflow
+GitHub Actions → Release Snapshot Workflow → Run workflow
 ```
 
 ### Create production release

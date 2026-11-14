@@ -5,7 +5,7 @@
 # Builds the signed demo release of a branch and uploads its AAB to the
 # Google Play internal track: no version bump, no changelog, no GitHub
 # release. Triggered manually, on the branch to build.
-name: Release Dev Workflow
+name: Release Snapshot Workflow
 
 on:
   workflow_dispatch:
